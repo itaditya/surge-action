@@ -1,0 +1,25 @@
+{
+  "name": "surge-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "surge": "^0.21.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "sh .github/workflows/test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itaditya/surge-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itaditya/surge-action/issues"
+  },
+  "homepage": "https://github.com/itaditya/surge-action#readme"
+}

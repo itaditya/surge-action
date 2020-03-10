@@ -1,0 +1,26 @@
+name: 'PR previews using surge.sh action'
+description: 'On every PR, deploy to surge.sh to get preview of the code.'
+inputs:
+  domain:
+    description: 'your surge.sh domain to deploy. By default it uses package name & version to generate domain url'
+  login:
+    description: 'surge.sh login'
+    required: true
+  token:
+    description: 'surge.sh token, generate it with `surge token` command'
+    required: true
+  project:
+    description: 'your project path'
+    default: '.'
+  action:
+    description: 'The action to perform on the domain. Could be publish or teardown etc.'
+    default: 'publish'
+  prefix:
+    description: 'when domain is not given, you can add prefix to the generated domain name'
+    default: ''
+  suffix:
+    description: 'when domain is not given, you can add suffix to the generated domain name'
+    default: ''
+runs:
+  using: 'node12'
+  main: 'src/index.js'
