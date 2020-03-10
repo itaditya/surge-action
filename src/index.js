@@ -1,9 +1,7 @@
-const generateSubdomain = require('./generateSubdomain');
-
-// const core = require('@actions/core');
-const core = require('./core');
-
 const surge = require('surge');
+const core = require('@actions/core');
+// const core = require('./core');
+const generateSubdomain = require('./generateSubdomain');
 
 try {
   const prefix = core.getInput('prefix') || '';
